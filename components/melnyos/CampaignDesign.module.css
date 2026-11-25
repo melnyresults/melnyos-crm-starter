@@ -1,0 +1,142 @@
+.card {
+  background: #191b1d;
+  border: 1px solid #303437;
+  border-radius: 10px;
+  margin-top: 16px;
+  padding: 18px;
+}
+.head,
+.tools {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 9px;
+  flex-wrap: wrap;
+}
+.head h2 {
+  font-size: 17px;
+  color: #f1f2ee;
+  font-weight: 600;
+}
+.head p,
+.help,
+.form > p {
+  color: #aab3ae;
+  font-size: 13px;
+}
+.tools select,
+.tools button,
+.form input,
+.form textarea {
+  border: 1px solid #3c4343;
+  border-radius: 5px;
+  background: #222627;
+  color: #e4e9e5;
+  padding: 7px 9px;
+  font-size: 13px;
+}
+.tools button {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.scripts {
+  margin: 15px 0;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(min(205px, 100%), 1fr));
+}
+.scripts details {
+  border: 1px solid #353937;
+  background: #151719;
+  border-radius: 5px;
+  padding: 8px;
+  font-size: 13px;
+}
+.scripts summary {
+  cursor: pointer;
+}
+.scripts p {
+  white-space: pre-wrap;
+  color: #bfc8c1;
+}
+.scroll {
+  overflow: auto;
+}
+.scroll table {
+  width: 100%;
+  text-align: right;
+  font-size: 13px;
+  font-variant-numeric: tabular-nums;
+}
+.scroll caption {
+  text-align: left;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+.scroll td,
+.scroll th {
+  padding: 7px;
+  border-bottom: 1px solid #303437;
+  white-space: nowrap;
+}
+.scroll th:first-child {
+  text-align: left;
+}
+.scroll td small {
+  display: block;
+  color: #9eaba4;
+}
+.help {
+  margin-top: 10px;
+}
+.form {
+  display: grid;
+  gap: 15px;
+}
+.form label {
+  display: grid;
+  gap: 5px;
+  font-size: 13px;
+}
+.form input,
+.form textarea {
+  width: 100%;
+}
+.form fieldset {
+  border: 1px solid #414946;
+  border-radius: 5px;
+  padding: 10px;
+  display: grid;
+  gap: 7px;
+}
+.form legend {
+  padding: 0 5px;
+}
+.save {
+  color: #15261e;
+  background: #a9d6c5;
+  border-radius: 6px;
+  font-weight: 600;
+  padding: 10px;
+}
+.importButton {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 10px;
+  border: 1px solid #3c4343;
+  background: #242828;
+  border-radius: 6px;
+  color: #e4e9e5;
+  font-size: 13px;
+}
+.form .save:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+.form ul {
+  margin-left: 1rem;
+  list-style: disc;
+  font-size: 13px;
+}

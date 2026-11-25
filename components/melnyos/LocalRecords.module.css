@@ -1,0 +1,91 @@
+.totals {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(145px, 1fr));
+  gap: 10px;
+}
+.totals > div {
+  display: grid;
+  gap: 8px;
+  padding: 16px;
+  border: 1px solid var(--edge);
+  border-radius: 10px;
+  background: var(--panel);
+}
+.totals span,
+.notice,
+.row small {
+  color: var(--muted);
+}
+.totals strong {
+  font-size: 24px;
+  letter-spacing: -0.035em;
+  overflow-wrap: anywhere;
+}
+.toolbar,
+.row,
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.toolbar,
+.row {
+  justify-content: space-between;
+  padding: 12px 16px;
+}
+.toolbar label {
+  min-width: 0;
+}
+.toolbar input,
+.fields select {
+  background: #111414;
+  color: var(--ink);
+  border: 1px solid #424745;
+  border-radius: 6px;
+  padding: 8px;
+  max-width: 100%;
+}
+.row {
+  width: 100%;
+  text-align: left;
+  color: var(--ink);
+  background: transparent;
+  border: 0;
+  border-top: 1px solid var(--edge);
+}
+.row:hover {
+  background: var(--raised);
+}
+.row > span,
+.fields,
+.field,
+.confirm {
+  display: grid;
+  gap: 6px;
+  min-width: 0;
+}
+.row span {
+  overflow-wrap: anywhere;
+}
+.row svg {
+  flex-shrink: 0;
+}
+.notice {
+  padding: 15px;
+}
+.fields {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  gap: 12px;
+}
+.actions {
+  flex-wrap: wrap;
+}
+.danger {
+  color: #edb9af;
+  border: 1px solid #714e47;
+  border-radius: 6px;
+  background: transparent;
+  padding: 7px 11px;
+}

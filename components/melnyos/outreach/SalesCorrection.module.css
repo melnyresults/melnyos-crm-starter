@@ -1,0 +1,63 @@
+.business {
+  color: var(--ink);
+  font-size: 1rem;
+  overflow-wrap: anywhere;
+}
+.preview {
+  border: 1px solid var(--edge);
+  border-radius: 8px;
+  padding: 12px 14px;
+}
+.preview h3 {
+  font-size: 13px;
+  color: var(--muted);
+  margin-bottom: 6px;
+}
+.preview li {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 4px 12px;
+  padding: 6px 0;
+  font-size: 13px;
+}
+.preview time {
+  color: var(--muted);
+  font-size: 12px;
+}
+.remove {
+  padding: 8px 12px;
+  border-radius: 6px;
+  background: #4a2826;
+  border: 1px solid #89504a;
+  color: #ffdbd7;
+  font-size: 13px;
+  font-weight: 600;
+}
+.remove:hover {
+  background: #63342f;
+}
+.undo {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 6px 14px;
+  padding: 10px 14px;
+  margin: 0 0 14px;
+  border: 1px solid #385849;
+  border-radius: 8px;
+  background: #1c2a23;
+  color: #d4ebdf;
+  font-size: 13px;
+  overflow-wrap: anywhere;
+}
+.undo button {
+  color: inherit;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.undo .dismiss {
+  margin-left: auto;
+  color: #b9c6bd;
+}
